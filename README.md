@@ -1,7 +1,5 @@
 # Medical Suite
 
-Medical Suite is a comprehensive healthcare management system designed to streamline healthcare delivery for patients, nurses, and doctors. This web application allows users to manage profiles, appointments, prescriptions, and inventory efficiently.
-
 ## Table of Contents
 
 1. [Meets Requirements](#meets-requirements)
