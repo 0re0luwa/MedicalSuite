@@ -110,8 +110,10 @@ Medical Suite aims to enhance healthcare management by providing a user-friendly
 ### Prerequisites
 
 - Visual Studio Code
-- .NET Core SDK
-- SQL Server
+   - Install the following workloads:
+      - ASP.NET and web development
+      - Data storage and processing
+- Microsoft SQL Server Management Studio
 
 ### Installation
 
@@ -120,8 +122,12 @@ Medical Suite aims to enhance healthcare management by providing a user-friendly
 2. **Open the project in Visual Studio Code**
     
 3. **Set up the database:**
-    - Ensure SQL Server is running.
-    - Update the connection string in `SecurityHelper.cs` if necessary.
+    - In Microsoft SQL Server Management Studio (SSMS).
+    - Create a database called `MedicalSuiteDB`.
+    - In Visual Studio, navigate to `tools` > `SQL Server` > `New Schema Comparison`.
+    - For the source, select the project's `MedicalSuiteDB` and click **OK**.
+    - For the target, choose the database connection by browsing to `Local` > `MSSQLLocalDB` and select the `MedicalSuiteDB` database. Click **Connect**, then **OK**.
+    - Click **Compare** in the top left corner. Once the comparison is complete, click **Update** to sync the target database with the project schema.
 
 4. **Run the post-deployment script to populate the database:**
     - The script should run automatically upon first deployment. If it doesn't, you may need to run it manually using your preferred SQL tool.
